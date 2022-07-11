@@ -1,7 +1,6 @@
-using Berger.Extensions.Pagination;
-using System.Collections.Generic;
-using NUnit.Framework;
 using System.Linq;
+using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace Berger.Extensions.Pagination.tests
 {
@@ -50,6 +49,7 @@ namespace Berger.Extensions.Pagination.tests
 
             Assert.IsTrue(pagination.PageInfo.HasPreviousPage);
         }
+
         [Test]
         [Order(4)]
         public void ShouldNotHavePreviousPage()
