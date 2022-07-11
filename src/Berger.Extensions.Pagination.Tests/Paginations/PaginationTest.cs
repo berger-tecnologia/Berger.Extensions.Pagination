@@ -1,9 +1,9 @@
-using berger.extensions.pagination.Services;
+using Berger.Extensions.Pagination.Services;
 using System.Collections.Generic;
 using NUnit.Framework;
 using System.Linq;
 
-namespace berger.extensions.pagination.tests
+namespace Berger.Extensions.Pagination.tests
 {
     public class PaginationTest
     {
