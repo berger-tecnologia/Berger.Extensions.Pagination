@@ -1,20 +1,15 @@
-﻿using berger.extensions.pagination.Models;
+﻿using Berger.Extensions.Pagination.Models;
 
-namespace berger.extensions.pagination.Services
+namespace Berger.Extensions.Pagination.Services
 {
     public static class PaginationExtension
     {
-        public static Pagination<T> Paginate<T>(this IQueryable<T> query, int page, int limit) where T : class
-        {
-            return query.MakePagination(page, limit);
-        }
-
         public static Pagination<T> Paginate<T>(this IList<T> list, int page, int limit) where T : class
         {
-            return list.AsQueryable().MakePagination(page, limit);
+            return list.AsQueryable().Paginate(page, limit);
         }
 
-        private static Pagination<T> MakePagination<T>(this IQueryable<T> query, int page, int limit) where T : class
+        public static Pagination<T> Paginate<T>(this IQueryable<T> query, int page, int limit) where T : class
         {
             var pagination = new Pagination<T>();
 

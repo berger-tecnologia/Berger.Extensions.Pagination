@@ -1,4 +1,4 @@
-﻿namespace berger.extensions.pagination.Models
+﻿namespace Berger.Extensions.Pagination.Models
 {
     public class PageInfo
     {
