@@ -1,4 +1,4 @@
-using Berger.Extensions.Pagination.Services;
+using Berger.Extensions.Pagination;
 using System.Collections.Generic;
 using NUnit.Framework;
 using System.Linq;

@@ -1,4 +1,4 @@
-﻿namespace Berger.Extensions.Pagination.Models
+﻿namespace Berger.Extensions.Pagination
 {
     public class Pagination<T> where T : class
     {

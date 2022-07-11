@@ -1,6 +1,6 @@
-﻿using Berger.Extensions.Pagination.Models;
+﻿using Berger.Extensions.Pagination;
 
-namespace Berger.Extensions.Pagination.Services
+namespace Berger.Extensions.Pagination
 {
     public static class PaginationExtension
     {
