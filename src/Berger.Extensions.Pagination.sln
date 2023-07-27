@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2e4319e0-596d-4637-bd92-c9f0c96015af}") = "Berger.Extensions.Pagination", "Berger.Extensions.Pagination\Berger.Extensions.Pagination.csproj", "{0e8c5f9f-aa3e-412f-be99-65456735200d}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Berger.Extensions.Pagination", "Berger.Extensions.Pagination\Berger.Extensions.Pagination.csproj", "{0E8C5F9F-AA3E-412F-BE99-65456735200D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{2323B53E-A2FC-4C9E-8196-8C640CBAB8E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{03194F0B-9204-449D-80BB-9C6CDAA24F1E}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\Berger.Extensions.Pagination.yml = ..\build\Berger.Extensions.Pagination.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +18,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0e8c5f9f-aa3e-412f-be99-65456735200d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0e8c5f9f-aa3e-412f-be99-65456735200d}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0e8c5f9f-aa3e-412f-be99-65456735200d}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0e8c5f9f-aa3e-412f-be99-65456735200d}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8C5F9F-AA3E-412F-BE99-65456735200D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8C5F9F-AA3E-412F-BE99-65456735200D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8C5F9F-AA3E-412F-BE99-65456735200D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8C5F9F-AA3E-412F-BE99-65456735200D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E8C5F9F-AA3E-412F-BE99-65456735200D} = {2323B53E-A2FC-4C9E-8196-8C640CBAB8E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4961BE93-F316-4B63-8144-768113F9C617}

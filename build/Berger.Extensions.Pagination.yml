@@ -10,7 +10,7 @@ resources:
     ref: refs/heads/dev
 jobs:
 - job: Job_1
-  displayName: Berger.Extensions.Pagination-Agent
+  displayName: Berger.Extensions.Build-Agent
   pool:
     vmImage: windows-latest
   steps:
@@ -40,5 +40,5 @@ jobs:
     inputs:
       command: push
       nuGetFeedType: external
-      publishFeedCredentials: 'berger.extensions.pagination-nuget'
+      publishFeedCredentials: 'berger.extensions.nuget'
 ...
