@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Pagination
 {
-    public static class PaginationHelper
+    public static class PaginationService
     {
         public static Pagination<T> Paginate<T>(this Pagination<T> pagination, int current) where T : class
         {
@@ -39,7 +39,7 @@
 
             var results = query.Count() <= limit ? query : query.Skip(skip).Take(limit);
 
-            var pageInfo = new PageInfo()
+            var pageInfo = new PageInformation()
             {
                 HasNextPage = round >= page + 1,
                 HasPreviousPage = page > 1
@@ -51,7 +51,7 @@
             pagination.Current = page;
             pagination.Pages = round;
 
-            pagination.PageInfo = pageInfo;
+            pagination.PageInformation = pageInfo;
 
             if (page > round)
             {
