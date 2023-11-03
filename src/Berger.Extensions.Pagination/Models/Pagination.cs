@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Pagination
 {
-    public class Pagination<T> where T : class
+    public class Pagination<T> : IPagination<T> where T : class
     {
         public int Current { get; set; } = 1;
         public List<T> Items { get; set; } = new List<T>();
@@ -9,6 +9,6 @@
         public int TotalCount { get; set; } = 0;
         public int Previous { get; set; } = 0;
         public int Next { get; set; } = 0;
-        public PageInformation PageInformation { get; set; } = new PageInformation();
+        public IPageInformation PageInformation { get; set; }
     }
 }

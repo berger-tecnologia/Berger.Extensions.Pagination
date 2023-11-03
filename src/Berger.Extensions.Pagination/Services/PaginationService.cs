@@ -2,7 +2,7 @@
 {
     public static class PaginationService
     {
-        public static Pagination<T> Paginate<T>(this Pagination<T> pagination, int current) where T : class
+        public static IPagination<T> Paginate<T>(this IPagination<T> pagination, int current) where T : class
         {
             var pages = (double)pagination.TotalCount / pagination.Limit;
 
@@ -24,11 +24,11 @@
 
             return pagination;
         }
-        public static Pagination<T> Paginate<T>(this IList<T> list, int page, int limit) where T : class
+        public static IPagination<T> Paginate<T>(this IList<T> list, int page, int limit) where T : class
         {
             return list.AsQueryable().Paginate(page, limit);
         }
-        public static Pagination<T> Paginate<T>(this IQueryable<T> query, int page, int limit) where T : class
+        public static IPagination<T> Paginate<T>(this IQueryable<T> query, int page, int limit) where T : class
         {
             var pagination = new Pagination<T>();
 

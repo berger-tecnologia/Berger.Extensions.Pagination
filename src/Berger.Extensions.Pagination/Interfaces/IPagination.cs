@@ -2,7 +2,13 @@
 {
     public interface IPagination<T> where T : class
     {
-        Pagination<T> Get(string query, int page = 0);
-        Pagination<T> Get(string query, int page = 0, object filters = null);
+        int Current { get; set; }
+        List<T> Items { get; set; }
+        int Limit { get; set; }
+        int Pages { get; set; }
+        int TotalCount { get; set; }
+        int Previous { get; set; }
+        int Next { get; set; }
+        IPageInformation PageInformation { get; set; }
     }
 }
