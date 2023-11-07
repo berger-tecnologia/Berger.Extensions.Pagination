@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{03194F0B
 		..\build\Berger.Extensions.Pagination.yml = ..\build\Berger.Extensions.Pagination.yml
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Berger.Extensions.Abstractions", "..\..\Berger.Extensions.Abstractions\src\Berger.Extensions.Abstractions\Berger.Extensions.Abstractions.csproj", "{7D27CB5A-6B6A-48D1-8586-7652EA2E3932}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,12 +24,17 @@ Global
 		{0E8C5F9F-AA3E-412F-BE99-65456735200D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E8C5F9F-AA3E-412F-BE99-65456735200D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E8C5F9F-AA3E-412F-BE99-65456735200D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D27CB5A-6B6A-48D1-8586-7652EA2E3932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D27CB5A-6B6A-48D1-8586-7652EA2E3932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D27CB5A-6B6A-48D1-8586-7652EA2E3932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D27CB5A-6B6A-48D1-8586-7652EA2E3932}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0E8C5F9F-AA3E-412F-BE99-65456735200D} = {2323B53E-A2FC-4C9E-8196-8C640CBAB8E9}
+		{7D27CB5A-6B6A-48D1-8586-7652EA2E3932} = {2323B53E-A2FC-4C9E-8196-8C640CBAB8E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4961BE93-F316-4B63-8144-768113F9C617}

@@ -1,4 +1,6 @@
-﻿namespace Berger.Extensions.Pagination
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Pagination
 {
     public static class PaginationService
     {
