@@ -4,6 +4,9 @@ trigger:
     - main
 name: 1.0.0$(Rev:.r)
 
+variables:
+  buildConfiguration: 'Release'
+
 resources:
   repositories:
   - repository: self
