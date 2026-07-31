@@ -1,6 +1,4 @@
-﻿using Berger.Extensions.Abstractions;
-
-namespace Berger.Extensions.Pagination
+﻿namespace Berger.Extensions.Pagination
 {
     public class Pagination<T> : IPagination<T> where T : class
     {
